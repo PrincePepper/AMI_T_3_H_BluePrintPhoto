@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1"
+            fx:controller="sample.Controller">
+    <AnchorPane>
+    </AnchorPane>
+    <left>
+        <VBox alignment="CENTER" prefHeight="497.0" prefWidth="132.0" style="-fx-spacing: 7; -fx-padding: 7;"
+              BorderPane.alignment="CENTER">
+            <opaqueInsets>
+                <Insets right="10.0" top="10.0"/>
+            </opaqueInsets>
+            <Button fx:id="addBlackAndWhiteNode" mnemonicParsing="false" prefHeight="61.0" prefWidth="133.0"
+                    text="Черно-белое"/>
+            <Button fx:id="addBlurMode" mnemonicParsing="false" prefHeight="63.0" prefWidth="118.0" text="Блюр"/>
+            <Button fx:id="addReflectionNode" mnemonicParsing="false" prefHeight="63.0" prefWidth="118.0"
+                    text="Отражение"/>
+        </VBox>
+    </left>
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <Menu mnemonicParsing="false" text="File">
+                <MenuItem fx:id="saveButton" mnemonicParsing="false" text="Сохранить"/>
+                <MenuItem fx:id="selectButton" mnemonicParsing="false" text="Выбрать файл"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <AnchorPane fx:id="AnchorPaneLayout" prefHeight="338.0" prefWidth="358.0" BorderPane.alignment="CENTER">
+        </AnchorPane>
+    </center>
+</BorderPane>
